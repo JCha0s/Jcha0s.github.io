@@ -1,10 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Dead Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Code Market - Buy & Sell Digital Codes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4A148C;
+            --secondary: #2962FF;
+            --accent: #AEEA00;
+            --bg: #F5F5F5;
+            --text: #212121;
+            --light: #FFFFFF;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: var(--light);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--primary);
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+        }
+        
+        .contact-box {
+            background-color: var(--light);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin: 2rem 0;
+        }
+        
+        .contact-info {
+            background-color: var(--secondary);
+            color: var(--light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-info a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .btn {
+            background-color: var(--accent);
+            color: var(--text);
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: var(--primary);
+            color: var(--light);
+        }
+        
+        form {
+            display: grid;
+            gap: 1rem;
+        }
+        
+        input, textarea {
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: var(--primary);
+            color: var(--light);
+            margin-top: 2rem;
+        }
+        
+        .code-font {
+            font-family: 'Roboto Mono', monospace;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Dead Website</h1>
-    <p>This is a simple static HTML site.</p>
+    <header>
+        <div class="container">
+            <h1>Digital Code Market</h1>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="hero">
+            <h2>Specialists in Digital Code Trading</h2>
+            <p>We buy and sell digital codes of all kinds. Contact us for enquiries and to see our current stock list.</p>
+        </section>
+        
+        <section class="contact-box">
+            <div class="contact-info">
+                <h3>Contact Us Directly</h3>
+                <p>Email: <a href="mailto:banenorrin@gmail.com">banenorrin@gmail.com</a></p>
+                <p>Phone: <a href="tel:07861633408">07861633408</a></p>
+            </div>
+            
+            <h3>Send Us an Enquiry</h3>
+            <form action="mailto:banenorrin@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Enquiry</button>
+            </form>
+        </section>
+        
+        <section>
+            <h3>Our Services</h3>
+            <p>We specialize in the buying and selling of digital codes across various platforms. Whether you're looking to purchase codes or have codes to sell, we provide competitive rates and a seamless transaction process.</p>
+            <p>Contact us to request our current stock list or to discuss your specific requirements.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Digital Code Market. All rights reserved.</p>
+    </footer>
 </body>
 </html>
